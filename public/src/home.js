@@ -44,7 +44,7 @@ function getMostCommonGenres(books) {
   //   //assign current value 
   //   //push to resultArr
   // }
-  return returnArr.sort((a,b) => a.count < b.count ? 1: -1).slice(0,5);
+  return returnArr.sort((compareA,compareB) => compareA.count < compareB.count ? 1: -1).slice(0,5);
   
   //split object up into object 
   //sort and slice result
@@ -65,7 +65,7 @@ function getMostPopularBooks(books) {
     //check length of book.borrows array
     //then add count to counter
   });
-  return newArr.sort((a,b)=> a.count < b.count ? 1: -1).slice(0,5);
+  return newArr.sort((compareA,compareB)=> compareA.count < compareB.count ? 1: -1).slice(0,5);
   //console.log(newArr);
 }
 
